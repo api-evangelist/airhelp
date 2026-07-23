@@ -1,7 +1,30 @@
 aid: airhelp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/airhelp.png
 name: Airhelp
-description: Airhelp is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AirHelp is a passenger-rights platform that helps air travelers claim
+  compensation for delayed, cancelled, and overbooked flights under regulations
+  such as EU 261, UK 261, and similar laws worldwide. It handles the full claims
+  process on a "no win, no fee" basis, managing paperwork, airline negotiations,
+  and legal escalation on the passenger's behalf, and offers an AirHelp+
+  membership adding fast-track claims, flight-disruption assistance, and airport
+  lounge access. AirHelp operates a consumer web funnel and mobile apps plus a
+  network of travel-brand, corporate, and affiliate partnerships, but does not
+  publish a public developer API, developer portal, or client SDKs; its GitHub
+  organization hosts internal engineering tooling rather than API client
+  libraries. This profile was seeded as a Y Combinator portfolio company and
+  enriched by the API Evangelist pipeline from AirHelp's public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/airhelp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +37,37 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Travel
+- Flight Compensation
+- Passenger Rights
+- Consumer
+- Legal Tech
+- Insurance
 apis: []
+common:
+- type: DomainSecurity
+  url: security/airhelp-domain-security.yml
+- type: Website
+  url: https://www.airhelp.com/
+- type: Support
+  url: https://www.airhelp.com/en/help/
+- type: Blog
+  url: https://www.airhelp.com/en/blog/
+- type: TermsOfService
+  url: https://www.airhelp.com/en/terms/
+- type: PrivacyPolicy
+  url: https://www.airhelp.com/en/privacy/
+- type: SignUp
+  url: https://funnel.airhelp.com/claims/new
+- type: GitHubOrganization
+  url: https://github.com/AirHelp
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

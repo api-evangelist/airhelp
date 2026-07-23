@@ -1,0 +1,21 @@
+generated: '2026-07-17'
+method: searched
+source: live probes of the AirHelp web host
+host: https://www.airhelp.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+note: >-
+  No /.well-known discovery documents are published on the AirHelp web host. All
+  probed paths returned HTTP 404. AirHelp exposes no public API discovery,
+  OAuth/OIDC authorization-server metadata, security.txt, or AI-plugin manifest.
+  Recorded for auditability; no WellKnown pointer is wired because nothing was
+  found.
